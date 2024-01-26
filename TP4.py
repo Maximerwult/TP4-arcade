@@ -10,6 +10,9 @@ SCREEN_HEIGHT = 600
 
 COLORS = [arcade.color.RED, arcade.color.GREEN, arcade.color.BLUE, arcade.color.YELLOW, arcade.color.ORANGE, arcade.color.PURPLE]
 
+
+#creation de la classe balle
+
 class Balle:
     def __init__(self, x, y):
         self.x = x
@@ -39,6 +42,9 @@ class Balle:
 
     def draw(self):
         arcade.draw_circle_filled(self.x, self.y, self.rayon, self.color)
+
+
+#creation de la classe rectangle
 
 class Rectangle:
     def __init__(self, x, y):
@@ -74,7 +80,7 @@ class Rectangle:
 
 class MyGame(arcade.Window):
     def __init__(self):
-        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "Exercice #1")
+        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, "essai #1")
         self.balles = []
         self.rectangles = []
 
